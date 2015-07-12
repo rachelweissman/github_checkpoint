@@ -15,14 +15,27 @@ body {
 }
 
 .navbar {
+    position: relative;
     padding: 0.5rem;
-    background-color: rgb(101,18,95);
+    background-color: rgba(101,18,95,0.5);
+    z-index: 1;
 }
 
 .navbar .logo {
     position: relative;
     left: 2rem;
+    cursor: pointer;
 }
+
+.navbar .links-container {
+    display: table;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    color: white;
+    /* #3 */
+    text-decoration: none;
 
 .container {
     margin: 0 auto;
