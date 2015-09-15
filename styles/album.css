@@ -3,6 +3,7 @@ body.album {
     background-repeat: repeat-y;
     background-position: center center;
     background-size: cover;
+    padding-bottom: 150px;
 }
 
 .album-cover-art {
@@ -40,6 +41,11 @@ body.album {
     font-size: 0.75;
 }
 
+.album-view-header {
+    text-align: left;
+}
+
+
 .album-view-song-item {
     height: 3rem;
     /* #1 */
@@ -48,24 +54,52 @@ body.album {
 
 .song-item-number {
     width: 5%;
-    text-align: center;
+    text-align: left;
 }
 
 .song-item-title {
     width: 70%;
-    text-align: center;
+    text-align: left;
 }
 
 .song-item-duration {
     width: 5%;
-    text-align: center;
+    text-align: left;
 }
 
+ .album-song-button {
+     text-align: center;
+     font-size: 14px;
+     background-color: white;
+     color: rgb(210, 40, 123);
+     border-radius: 50% 50%;
+     display: inline-block;
+     width: 28px;
+     height: 28px;
+ }
+ 
+ .album-song-button:hover {
+     cursor: pointer;
+     color: white;
+     background-color: rgb(210, 40, 123);
+ }
+ 
+ .album-song-button i {
+     line-height: 28px;
+ }
+ 
+ .album-song-button .fa-play {
+     padding-left: 5px;
+ }
+ 
+ .album-song-listing td {
+     vertical-align: middle;
+ }
+
 .song-times-played {
-        width: 20%;
-        text-align: center;
-}
-    
+        width: 10%;
+        text-align: left;
+}   
 
 /* #2 */
 @media (max-width: 40rem) and (min-width: 20rem) {
@@ -80,6 +114,10 @@ body.album {
 
 /* #3 */
 @media (max-width:64rem) and (min-width:20rem) {
+     body.album {
+         padding-bottom: 200px;
+     }
+    
     .album-view-song-list {
         position: relative;
         top: relative;
